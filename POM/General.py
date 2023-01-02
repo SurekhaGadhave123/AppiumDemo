@@ -9,7 +9,7 @@ class General(Wrapper):
     def click_keypad(self):
         keypad = (By.ID, "com.google.android.dialer:id/dialpad_fab")
         self.click_element(keypad)
-        time.sleep(2)
+        time.sleep(3)
 
     def click_numbers(self,no):
         number = (By.ID, f"com.google.android.dialer:id/{no}")

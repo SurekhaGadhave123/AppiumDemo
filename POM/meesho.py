@@ -23,7 +23,7 @@ class Meesho(Wrapper):
     def click_kurties(self):
         kurties = (By.ID, "com.meesho.supply:id/title")
         self.click_element(kurties)
-        time.sleep(2)
+        time.sleep(3)
 
     def click_product(self):
         product = (By.ID, "com.meesho.supply:id/catalog_cover")

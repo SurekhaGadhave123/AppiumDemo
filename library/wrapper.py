@@ -53,7 +53,7 @@ class Wrapper:
     def clear_data(self, element):
         self.driver.find_element(element[0],element[1]).clear()
         self.driver.refresh()
-        time.sleep(5)
+        time.sleep(3)
 
     def get_no_of_rows(self, element):
         rows = self.driver.find_elements(By.XPATH, element)

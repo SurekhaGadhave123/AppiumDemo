@@ -17,7 +17,7 @@ def is_visible(self, loc_type, loc_value):
 
 def _wait(func):
     def wrapper2(self, element, text=None, item=None):
-        wait = WebDriverWait(self, timeout=10)
+        wait = WebDriverWait(self, timeout=5)
         w = wait.until(is_visible(self, element[0], element[1]))
         if w:
             if text:

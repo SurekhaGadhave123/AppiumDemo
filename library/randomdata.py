@@ -1,6 +1,6 @@
 import random
 
-num = random.randint(1,9999)
+num = random.randint(1,9998)
 
 
 def gen_random_mobno():
