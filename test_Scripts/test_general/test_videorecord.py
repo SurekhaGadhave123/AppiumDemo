@@ -44,7 +44,7 @@ def test_videorecord():
     print("Scrolling action performed successfully")
     video_rawdata=driver.stop_recording_screen()
     video_name=driver.current_activity+time.strftime("%Y_%m_%d_%H%M%S")
-    filepath=os.path.join("C:\\Users\\Surekha Gadhave\\PycharmProjects\\Demo123\\Screenshots\\", video_name+".mp4")
+    filepath=os.path.join("/Screenshot\\", video_name + ".mp4")
     with open(filepath,"wb") as vd:
         vd.write(base64.b64decode(video_rawdata))
 

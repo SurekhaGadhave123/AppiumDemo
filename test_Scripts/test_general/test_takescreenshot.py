@@ -25,4 +25,4 @@ def test_screenshot():
     activityname=driver.current_activity
     filename=activityname+ts
     time.sleep(2)
-    driver.save_screenshot("C:\\Users\\Surekha Gadhave\\PycharmProjects\\Demo123\\Screenshots\\"+filename+".png")
+    driver.save_screenshot("C:\\Users\\Surekha Gadhave\\PycharmProjects\\Demo123\\Screenshot\\"+filename+".png")
