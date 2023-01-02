@@ -4,6 +4,7 @@ from selenium.webdriver.common.by import By
 class General(Wrapper):
     def __init__(self, driver):
         super().__init__(driver)
+        # super().__init__(driver)
 
     def click_keypad(self):
         keypad = (By.ID, "com.google.android.dialer:id/dialpad_fab")

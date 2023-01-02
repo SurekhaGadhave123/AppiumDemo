@@ -6,7 +6,6 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.wait import WebDriverWait
 from library.custom_wait import _wait, is_visible
-from library.config import Config
 
 
 class Wrapper:
