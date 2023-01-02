@@ -1,4 +1,5 @@
 import xlrd
+from _pytest.config import Config
 
 
 def read_locators(sheetname):
