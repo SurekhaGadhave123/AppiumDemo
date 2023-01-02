@@ -1,5 +1,4 @@
 import xlrd
-from library.config import Config
 
 
 def read_locators(sheetname):
