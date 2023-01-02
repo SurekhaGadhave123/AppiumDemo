@@ -11,7 +11,7 @@ def calculator():
         "appActivity": "com.android.calculator2.Calculator"
     }
     driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_cap)
-    driver.implicitly_wait(5)
+    driver.implicitly_wait(4)
     gs=General(driver)
     print("welcome to calculator")
     gs.click_seven()

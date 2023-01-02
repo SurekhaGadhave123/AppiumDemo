@@ -42,7 +42,7 @@ actions.perform()
 # lonapress
 firstname=driver.find_element(By.XPATH,"//android.widget.EditText[@text='First name']")
 firstname.send_keys("Appium Testing")
-time.sleep(3)
+time.sleep(2)
 user_action.long_press(firstname,duration=3000).perform()
 # hide keyboard
 driver.hide_keyboard()

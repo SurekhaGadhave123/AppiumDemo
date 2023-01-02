@@ -40,7 +40,7 @@ def test_videorecord():
         actions.w3c_actions.pointer_action.move_to_location(x=549, y=567)
         actions.w3c_actions.pointer_action.release()
         actions.perform()
-        time.sleep(3)
+        time.sleep(2)
     print("Scrolling action performed successfully")
     video_rawdata=driver.stop_recording_screen()
     video_name=driver.current_activity+time.strftime("%Y_%m_%d_%H%M%S")

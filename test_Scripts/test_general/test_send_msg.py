@@ -16,7 +16,7 @@ def test_send_msg():
     driver.implicitly_wait(5)
     gs=General(driver)
     gs.click_messegesicon()
-    time.sleep(3)
+    time.sleep(2)
     print("welcome to messaging app")
     gs.click_startchatbtn()
     gs.enter_phoneno(mobno)

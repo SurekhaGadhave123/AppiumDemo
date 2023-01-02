@@ -21,7 +21,7 @@ def test_dialnumber():
   gs.click_keypad()
   time.sleep(3)
   print("welcome to phone dial")
-  time.sleep(3)
+  time.sleep(2)
   driver.find_element(By.ID,"com.google.android.dialer:id/digits").send_keys(mobno)
   time.sleep(3)
   gs.click_callbtn()

@@ -9,7 +9,7 @@ desired_cap = {
   "appium:app": "C:\\Users\\Surekha Gadhave\\Downloads\\meesho-14-0.apk"
 }
 driver=webdriver.Remote('http://localhost:4723/wd/hub',desired_cap)
-driver.implicitly_wait(30)
+driver.implicitly_wait(5)
 ms = Meesho(driver)
 # ms.click_continue()
 ms.click_close_window()

@@ -17,7 +17,7 @@ def test_dropdown():
     ms.click_continue()
     countrycode=driver.find_element(By.ID,"com.meesho.supply:id/country_code")
     countrycode.click()
-    time.sleep(3)
+    time.sleep(2)
     options=driver.find_elements(By.CLASS_NAME,"android.widget.TextView")
     print("elements:",len(options))
     expected_list=['🇦🇫     Afghanistan (+93)', '🇦🇱     Albania (+355)', '🇩🇿     Algeria (+213)', '🇦🇸     American Samoa (+1)', '🇦🇩     Andorra (+376)', '🇦🇴     Angola (+244)', '🇦🇮     Anguilla (+1)', '🇦🇬     Antigua (+1)', '🇦🇷     Argentina (+54)', '🇦🇲     Armenia (+374)', '🇦🇼     Aruba (+297)', '🇦🇺     Australia (+61)']

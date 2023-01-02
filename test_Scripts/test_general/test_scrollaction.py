@@ -22,7 +22,7 @@ def test_scrollaction():
     ms.click_allow()
     print("welcome to Home page of meesho")
     ms.click_categories()
-    time.sleep(3)
+    time.sleep(2)
     print("welcome to categories page of meesho")
 
     for i in range(6):

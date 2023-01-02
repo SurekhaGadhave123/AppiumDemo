@@ -24,5 +24,5 @@ def test_screenshot():
     ts=time.strftime("%Y_%m_%d_%H%M%S")
     activityname=driver.current_activity
     filename=activityname+ts
-    time.sleep(3)
+    time.sleep(2)
     driver.save_screenshot("C:\\Users\\Surekha Gadhave\\PycharmProjects\\Demo123\\Screenshots\\"+filename+".png")
