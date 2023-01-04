@@ -2,7 +2,7 @@ from appium import webdriver
 from POM.General import General
 
 
-def calculator():
+def test_calculator():
     desired_cap = {
         "appium:deviceName": "sdk_gphone64_x86_64",
         "platformName": "Android",
@@ -22,4 +22,4 @@ def calculator():
     assert value == "10", "Calculator not working correctly"
     print("Calculator working perfectly")
     driver.quit()
-calculator()
+# test_calculator()
