@@ -7,7 +7,7 @@ from selenium.webdriver.common.actions.pointer_input import PointerInput
 from POM.meesho import Meesho
 
 
-def test_scrollaction():
+def test_scrollaction():#scrolling actions by coordinates
     desired_cap = {
         "appium:deviceName": "sdk_gphone64_x86_64",
         "platformName": "Android",
