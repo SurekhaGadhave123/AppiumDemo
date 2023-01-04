@@ -9,7 +9,7 @@ def test_progressbar():
         "platformName": "Android",
         "platformVersion": "13",
         "automationName": "UiAutomator2",
-        "app": "C:\\Users\\Surekha Gadhave\\Downloads\\AndroidUI.apk"
+        "app": "C:\\Users\\Surekha Gadhave\\Downloads\\AndroidUI.apk"    #for this apk currently not able to click continue button.
 
     }
     driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_cap)
