@@ -17,7 +17,7 @@ def test_scrollaction():
     driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_cap)
     driver.implicitly_wait(5)
     ms = Meesho(driver)
-    # ms.click_continue()
+    ms.click_continue()
     ms.click_close_window()
     ms.click_allow()
     print("welcome to Home page of meesho")
