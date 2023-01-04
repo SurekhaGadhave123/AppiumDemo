@@ -14,9 +14,14 @@ def test_dropdown():
     driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_cap)
     driver.implicitly_wait(5)
     ms = Meesho(driver)
-    ms.click_continue()
-    countrycode=driver.find_element(By.ID,"com.meesho.supply:id/country_code")
-    countrycode.click()
+    # ms.click_continue()
+    time.sleep(3)
+    ms.click_close_window()
+    ms.click_allow()
+    print("welcome to Home page of meesho")
+    ms.click_account()
+    ms.click_signup()
+    ms.click_countrycode()
     time.sleep(2)
     options=driver.find_elements(By.CLASS_NAME,"android.widget.TextView")
     print("elements:",len(options))
@@ -27,9 +32,7 @@ def test_dropdown():
 
     print(list)
     assert expected_list==list,"list are not matching"
-    # select algeria country from dropdown
-    algeria=driver.find_element(By.XPATH,"//android.widget.TextView[@text='🇩🇿     Algeria (+213)']")
-    algeria.click()
+    # select country from dropdown
+    ms.click_country("🇩🇿     Algeria (+213)")
     print("Dropdown handeled successfully")
     driver.quit()
-test_dropdown()

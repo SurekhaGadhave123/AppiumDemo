@@ -40,3 +40,23 @@ class Meesho(Wrapper):
         self.click_element(continue_btn)
         time.sleep(2)
 
+    def click_country(self,name):
+        country =(By.XPATH, f"//android.widget.TextView[@text='{name}']")
+        self.click_element(country)
+        time.sleep(2)
+
+    def click_account(self):
+        account =(By.XPATH, "//android.widget.FrameLayout[@content-desc='Account']/android.widget.ImageView")
+        self.click_element(account)
+        time.sleep(2)
+
+    def click_signup(self):
+        signup =(By.ID, "com.meesho.supply:id/sign_up")
+        self.click_element(signup)
+        time.sleep(2)
+
+    def click_countrycode(self):
+        code =(By.ID, "com.meesho.supply:id/country_code")
+        self.click_element(code)
+        time.sleep(2)
+
