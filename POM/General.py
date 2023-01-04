@@ -86,6 +86,22 @@ class General(Wrapper):
         text=(By.ID,"com.google.android.apps.messaging:id/message_text")
         return self.get_text_from_element(text)
 
+    def click_morefield(self):
+        more = (By.ID,"com.google.android.contacts:id/more_fields")
+        self.click_element(more)
+        time.sleep(2)
+
+    def click_contacts(self):
+        contact = (By.XPATH,"//android.widget.FrameLayout[@content-desc='Contacts']/android.view.ViewGroup/android.widget.TextView")
+        self.click_element(contact)
+        time.sleep(2)
+
+    def enter_firstname(self,name):
+        firstname = (By.ID, "//android.widget.EditText[@text='First name']")
+        self.enter_text(firstname,name)
+        time.sleep(2)
+
+
 
 
 
