@@ -25,7 +25,7 @@ def test_scrollaction():#scrolling actions by coordinates
         driver = webdriver.Remote('http://localhost:4723/wd/hub', desired_cap)
         driver.implicitly_wait(5)
         ms = Meesho(driver)
-        time.sleep(5)
+        time.sleep(3)
         # ms.click_continue()
         # ms.click_close_window()
         driver.find_element(By.ID,"com.meesho.supply:id/close").click()
