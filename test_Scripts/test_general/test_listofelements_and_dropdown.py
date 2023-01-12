@@ -1,5 +1,4 @@
 import time
-
 import allure
 from allure_commons.types import AttachmentType
 from appium import webdriver
